@@ -986,3 +986,128 @@
  DEBUG [8a0fdd41] 	Unable to execute command or shell on remote system: Failed to Execute process.
  DEBUG [8a0fdd41] Finished in 5.174 seconds with exit status 4294967295 (failed).
   WARN rbenv: 2.1.1 is not installed or not found in $HOME/.rbenv/versions/2.1.1
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-23 18:03:34 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-23 18:03:39 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-23 18:03:55 +0800 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [feb5adf6] Running [ -d $HOME/.rbenv/versions/2.1.1 ] as ares@127.0.0.1
+ DEBUG [feb5adf6] Command: [ -d $HOME/.rbenv/versions/2.1.1 ]
+  INFO [fab35338] Running /usr/bin/env mkdir -p /tmp as ares@127.0.0.1
+ DEBUG [fab35338] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [fab45b0a] Running /usr/bin/env #<StringIO:0x00000003cf4ec0> /tmp/git-ssh-my_app_name-test-Administrator.sh as ares@127.0.0.1
+ DEBUG [fab45b0a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env #<StringIO:0x00000003cf4ec0> /tmp/git-ssh-my_app_name-test-Administrator.sh )
+  INFO [19552648] Running /usr/bin/env chmod 700 /tmp/git-ssh-my_app_name-test-Administrator.sh as ares@127.0.0.1
+ DEBUG [19552648] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-my_app_name-test-Administrator.sh )
+  INFO [1776ced1] Running /usr/bin/env git ls-remote git@example.com:me/my_repo.git HEAD as ares@127.0.0.1
+ DEBUG [1776ced1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-test-Administrator.sh" ; /usr/bin/env git ls-remote git@example.com:me/my_repo.git HEAD )
+  INFO [cb1de3c9] Running /usr/bin/env mkdir -p /home//apps/appname/shared /home//apps/appname/releases as ares@127.0.0.1
+ DEBUG [cb1de3c9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env mkdir -p /home//apps/appname/shared /home//apps/appname/releases )
+  INFO [842f4875] Running /usr/bin/env mkdir -p /home//apps/appname/shared/bin /home//apps/appname/shared/log /home//apps/appname/shared/tmp/pids /home//apps/appname/shared/tmp/cache /home//apps/appname/shared/tmp/sockets /home//apps/appname/shared/vendor/bundle /home//apps/appname/shared/public/system /home//apps/appname/shared/public/assets as ares@127.0.0.1
+ DEBUG [842f4875] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env mkdir -p /home//apps/appname/shared/bin /home//apps/appname/shared/log /home//apps/appname/shared/tmp/pids /home//apps/appname/shared/tmp/cache /home//apps/appname/shared/tmp/sockets /home//apps/appname/shared/vendor/bundle /home//apps/appname/shared/public/system /home//apps/appname/shared/public/assets )
+  INFO [f077c3b8] Running /usr/bin/env mkdir -p /home//apps/appname/shared/config as ares@127.0.0.1
+ DEBUG [f077c3b8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env mkdir -p /home//apps/appname/shared/config )
+ DEBUG [f98146b5] Running [ -f /home//apps/appname/shared/config/database.yml ] as ares@127.0.0.1
+ DEBUG [f98146b5] Command: [ -f /home//apps/appname/shared/config/database.yml ]
+ DEBUG [f781ff55] Running [ -f /home//apps/appname/shared/config/application.yml ] as ares@127.0.0.1
+ DEBUG [f781ff55] Command: [ -f /home//apps/appname/shared/config/application.yml ]
+ DEBUG [dc8e6a98] Running [ -f /home//apps/appname/shared/config/secrets.yml ] as ares@127.0.0.1
+ DEBUG [dc8e6a98] Command: [ -f /home//apps/appname/shared/config/secrets.yml ]
+ DEBUG [0e8504ba] Running [ -f /home//apps/appname/current/REVISION ] as ares@127.0.0.1
+ DEBUG [0e8504ba] Command: [ -f /home//apps/appname/current/REVISION ]
+ DEBUG [6646c1c5] Running /usr/bin/env cat /home//apps/appname/current/REVISION 2>/dev/null as ares@127.0.0.1
+ DEBUG [6646c1c5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env cat /home//apps/appname/current/REVISION 2>/dev/null )
+ DEBUG [f41df04e] Running [ -f /home//apps/appname/repo/HEAD ] as ares@127.0.0.1
+ DEBUG [f41df04e] Command: [ -f /home//apps/appname/repo/HEAD ]
+  INFO The repository mirror is at /home//apps/appname/repo
+ DEBUG [dcb3af2c] Running if test ! -d /home//apps/appname/repo; then echo "Directory does not exist '/home//apps/appname/repo'" 1>&2; false; fi as ares@127.0.0.1
+ DEBUG [dcb3af2c] Command: if test ! -d /home//apps/appname/repo; then echo "Directory does not exist '/home//apps/appname/repo'" 1>&2; false; fi
+  INFO [03a604c4] Running /usr/bin/env git remote set-url origin git@example.com:me/my_repo.git as ares@127.0.0.1
+ DEBUG [03a604c4] Command: cd /home//apps/appname/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-test-Administrator.sh" ; /usr/bin/env git remote set-url origin git@example.com:me/my_repo.git )
+  INFO [38a675da] Running /usr/bin/env git remote update --prune as ares@127.0.0.1
+ DEBUG [38a675da] Command: cd /home//apps/appname/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-test-Administrator.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [f1343344] Running if test ! -d /home//apps/appname/repo; then echo "Directory does not exist '/home//apps/appname/repo'" 1>&2; false; fi as ares@127.0.0.1
+ DEBUG [f1343344] Command: if test ! -d /home//apps/appname/repo; then echo "Directory does not exist '/home//apps/appname/repo'" 1>&2; false; fi
+  INFO [d0fffb83] Running /usr/bin/env mkdir -p /home//apps/appname/releases/20170323100355 as ares@127.0.0.1
+ DEBUG [d0fffb83] Command: cd /home//apps/appname/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-test-Administrator.sh" ; /usr/bin/env mkdir -p /home//apps/appname/releases/20170323100355 )
+  INFO [96db3fe2] Running /usr/bin/env git archive develop | /usr/bin/env tar -x -f - -C /home//apps/appname/releases/20170323100355 as ares@127.0.0.1
+ DEBUG [96db3fe2] Command: cd /home//apps/appname/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-test-Administrator.sh" ; /usr/bin/env git archive develop | /usr/bin/env tar -x -f - -C /home//apps/appname/releases/20170323100355 )
+ DEBUG [ec5de89c] Running if test ! -d /home//apps/appname/repo; then echo "Directory does not exist '/home//apps/appname/repo'" 1>&2; false; fi as ares@127.0.0.1
+ DEBUG [ec5de89c] Command: if test ! -d /home//apps/appname/repo; then echo "Directory does not exist '/home//apps/appname/repo'" 1>&2; false; fi
+ DEBUG [d5dcf6f7] Running /usr/bin/env git rev-list --max-count=1 develop as ares@127.0.0.1
+ DEBUG [d5dcf6f7] Command: cd /home//apps/appname/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-test-Administrator.sh" ; /usr/bin/env git rev-list --max-count=1 develop )
+ DEBUG [05170ccc] Running if test ! -d /home//apps/appname/releases/20170323100355; then echo "Directory does not exist '/home//apps/appname/releases/20170323100355'" 1>&2; false; fi as ares@127.0.0.1
+ DEBUG [05170ccc] Command: if test ! -d /home//apps/appname/releases/20170323100355; then echo "Directory does not exist '/home//apps/appname/releases/20170323100355'" 1>&2; false; fi
+  INFO [17f0fc4e] Running /usr/bin/env echo "" >> REVISION as ares@127.0.0.1
+ DEBUG [17f0fc4e] Command: cd /home//apps/appname/releases/20170323100355 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env echo "" >> REVISION )
+  INFO [23e61d17] Running /usr/bin/env mkdir -p /home//apps/appname/releases/20170323100355/config as ares@127.0.0.1
+ DEBUG [23e61d17] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env mkdir -p /home//apps/appname/releases/20170323100355/config )
+ DEBUG [ea7aa37c] Running [ -L /home//apps/appname/releases/20170323100355/config/database.yml ] as ares@127.0.0.1
+ DEBUG [ea7aa37c] Command: [ -L /home//apps/appname/releases/20170323100355/config/database.yml ]
+ DEBUG [65c97347] Running [ -L /home//apps/appname/releases/20170323100355/config/application.yml ] as ares@127.0.0.1
+ DEBUG [65c97347] Command: [ -L /home//apps/appname/releases/20170323100355/config/application.yml ]
+ DEBUG [caf9fed5] Running [ -L /home//apps/appname/releases/20170323100355/config/secrets.yml ] as ares@127.0.0.1
+ DEBUG [caf9fed5] Command: [ -L /home//apps/appname/releases/20170323100355/config/secrets.yml ]
+  INFO [182f7f25] Running /usr/bin/env mkdir -p /home//apps/appname/releases/20170323100355 /home//apps/appname/releases/20170323100355/tmp /home//apps/appname/releases/20170323100355/vendor /home//apps/appname/releases/20170323100355/public as ares@127.0.0.1
+ DEBUG [182f7f25] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env mkdir -p /home//apps/appname/releases/20170323100355 /home//apps/appname/releases/20170323100355/tmp /home//apps/appname/releases/20170323100355/vendor /home//apps/appname/releases/20170323100355/public )
+ DEBUG [33c5a43e] Running [ -L /home//apps/appname/releases/20170323100355/bin ] as ares@127.0.0.1
+ DEBUG [33c5a43e] Command: [ -L /home//apps/appname/releases/20170323100355/bin ]
+ DEBUG [d9a32cde] Running [ -L /home//apps/appname/releases/20170323100355/log ] as ares@127.0.0.1
+ DEBUG [d9a32cde] Command: [ -L /home//apps/appname/releases/20170323100355/log ]
+ DEBUG [b72e36a0] Running [ -L /home//apps/appname/releases/20170323100355/tmp/pids ] as ares@127.0.0.1
+ DEBUG [b72e36a0] Command: [ -L /home//apps/appname/releases/20170323100355/tmp/pids ]
+ DEBUG [0609106d] Running [ -L /home//apps/appname/releases/20170323100355/tmp/cache ] as ares@127.0.0.1
+ DEBUG [0609106d] Command: [ -L /home//apps/appname/releases/20170323100355/tmp/cache ]
+ DEBUG [226e4a29] Running [ -L /home//apps/appname/releases/20170323100355/tmp/sockets ] as ares@127.0.0.1
+ DEBUG [226e4a29] Command: [ -L /home//apps/appname/releases/20170323100355/tmp/sockets ]
+ DEBUG [9c48109f] Running [ -L /home//apps/appname/releases/20170323100355/vendor/bundle ] as ares@127.0.0.1
+ DEBUG [9c48109f] Command: [ -L /home//apps/appname/releases/20170323100355/vendor/bundle ]
+ DEBUG [835e4dee] Running [ -L /home//apps/appname/releases/20170323100355/public/system ] as ares@127.0.0.1
+ DEBUG [835e4dee] Command: [ -L /home//apps/appname/releases/20170323100355/public/system ]
+ DEBUG [477859ea] Running [ -L /home//apps/appname/releases/20170323100355/public/assets ] as ares@127.0.0.1
+ DEBUG [477859ea] Command: [ -L /home//apps/appname/releases/20170323100355/public/assets ]
+ DEBUG [c1c61cad] Running if test ! -d /home//apps/appname/releases/20170323100355; then echo "Directory does not exist '/home//apps/appname/releases/20170323100355'" 1>&2; false; fi as ares@127.0.0.1
+ DEBUG [c1c61cad] Command: if test ! -d /home//apps/appname/releases/20170323100355; then echo "Directory does not exist '/home//apps/appname/releases/20170323100355'" 1>&2; false; fi
+ DEBUG [0f86bffa] Running RBENV_ROOT=$HOME/.rbenv RBENV_VERSION=2.1.1 $HOME/.rbenv/bin/rbenv exec bundle check --path /home//apps/appname/shared/bundle as ares@127.0.0.1
+ DEBUG [0f86bffa] Command: cd /home//apps/appname/releases/20170323100355 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; RBENV_ROOT=$HOME/.rbenv RBENV_VERSION=2.1.1 $HOME/.rbenv/bin/rbenv exec bundle check --path /home//apps/appname/shared/bundle )
+ DEBUG [6f263b55] Running if test ! -d /home//apps/appname/releases/20170323100355; then echo "Directory does not exist '/home//apps/appname/releases/20170323100355'" 1>&2; false; fi as ares@127.0.0.1
+ DEBUG [6f263b55] Command: if test ! -d /home//apps/appname/releases/20170323100355; then echo "Directory does not exist '/home//apps/appname/releases/20170323100355'" 1>&2; false; fi
+  INFO [0b337fa2] Running RBENV_ROOT=$HOME/.rbenv RBENV_VERSION=2.1.1 $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as ares@127.0.0.1
+ DEBUG [0b337fa2] Command: cd /home//apps/appname/releases/20170323100355 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" RAILS_ENV="test" ; RBENV_ROOT=$HOME/.rbenv RBENV_VERSION=2.1.1 $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [a37321ba] Running if test ! -d /home//apps/appname/releases/20170323100355; then echo "Directory does not exist '/home//apps/appname/releases/20170323100355'" 1>&2; false; fi as ares@127.0.0.1
+ DEBUG [a37321ba] Command: if test ! -d /home//apps/appname/releases/20170323100355; then echo "Directory does not exist '/home//apps/appname/releases/20170323100355'" 1>&2; false; fi
+  INFO [f032e95d] Running /usr/bin/env mkdir -p /home//apps/appname/releases/20170323100355/assets_manifest_backup as ares@127.0.0.1
+ DEBUG [f032e95d] Command: cd /home//apps/appname/releases/20170323100355 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env mkdir -p /home//apps/appname/releases/20170323100355/assets_manifest_backup )
+ DEBUG [b1dc41be] Running /usr/bin/env ls /home//apps/appname/releases/20170323100355/public/assets/.sprockets-manifest* as ares@127.0.0.1
+ DEBUG [b1dc41be] Command: cd /home//apps/appname/releases/20170323100355 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env ls /home//apps/appname/releases/20170323100355/public/assets/.sprockets-manifest* )
+ DEBUG [2c44cbd9] Running /usr/bin/env ls /home//apps/appname/releases/20170323100355/public/assets/.sprockets-manifest* as ares@127.0.0.1
+ DEBUG [2c44cbd9] Command: cd /home//apps/appname/releases/20170323100355 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env ls /home//apps/appname/releases/20170323100355/public/assets/.sprockets-manifest* )
+  INFO [6ef9feba] Running /usr/bin/env cp  /home//apps/appname/releases/20170323100355/assets_manifest_backup as ares@127.0.0.1
+ DEBUG [6ef9feba] Command: cd /home//apps/appname/releases/20170323100355 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env cp  /home//apps/appname/releases/20170323100355/assets_manifest_backup )
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [7f953fd9] Running if test ! -d /home//apps/appname/releases/20170323100355; then echo "Directory does not exist '/home//apps/appname/releases/20170323100355'" 1>&2; false; fi as ares@127.0.0.1
+ DEBUG [7f953fd9] Command: if test ! -d /home//apps/appname/releases/20170323100355; then echo "Directory does not exist '/home//apps/appname/releases/20170323100355'" 1>&2; false; fi
+  INFO [d61ddbcc] Running RBENV_ROOT=$HOME/.rbenv RBENV_VERSION=2.1.1 $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as ares@127.0.0.1
+ DEBUG [d61ddbcc] Command: cd /home//apps/appname/releases/20170323100355 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" RAILS_ENV="test" ; RBENV_ROOT=$HOME/.rbenv RBENV_VERSION=2.1.1 $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [a3569860] Running /usr/bin/env ln -s /home//apps/appname/releases/20170323100355 /home//apps/appname/releases/current as ares@127.0.0.1
+ DEBUG [a3569860] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env ln -s /home//apps/appname/releases/20170323100355 /home//apps/appname/releases/current )
+  INFO [8766bb4a] Running /usr/bin/env mv /home//apps/appname/releases/current /home//apps/appname as ares@127.0.0.1
+ DEBUG [8766bb4a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env mv /home//apps/appname/releases/current /home//apps/appname )
+ DEBUG [ea39a8f7] Running /usr/bin/env ls -x /home//apps/appname/releases as ares@127.0.0.1
+ DEBUG [ea39a8f7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env ls -x /home//apps/appname/releases )
+ DEBUG [655545ea] Running if test ! -d /home//apps/appname/releases; then echo "Directory does not exist '/home//apps/appname/releases'" 1>&2; false; fi as ares@127.0.0.1
+ DEBUG [655545ea] Command: if test ! -d /home//apps/appname/releases; then echo "Directory does not exist '/home//apps/appname/releases'" 1>&2; false; fi
+  INFO [2757a88f] Running /usr/bin/env echo "Branch develop (at ) deployed as release 20170323100355 by Administrator" >> /home//apps/appname/revisions.log as ares@127.0.0.1
+ DEBUG [2757a88f] Command: cd /home//apps/appname/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.1.1" ; /usr/bin/env echo "Branch develop (at ) deployed as release 20170323100355 by Administrator" >> /home//apps/appname/revisions.log )
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-23 18:04:13 +0800 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [72a8e6cd] Running [ -d $HOME/.rbenv/versions/2.1.1 ] as ares@127.0.0.1
+ DEBUG [72a8e6cd] Command: [ -d $HOME/.rbenv/versions/2.1.1 ]
+ DEBUG [72a8e6cd] 	Unable to execute command or shell on remote system: Failed to Execute process.
+ DEBUG [72a8e6cd] Finished in 14.924 seconds with exit status 4294967295 (failed).
+  WARN rbenv: 2.1.1 is not installed or not found in $HOME/.rbenv/versions/2.1.1
